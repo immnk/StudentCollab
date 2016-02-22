@@ -1,10 +1,11 @@
 angular.module('codaglobal.controllers')
-.controller('DashboardCtrl', ['$scope', '$state', 'TrainingService',
-  function($scope, $state, TrainingService){
+.controller('DashboardCtrl', ['$scope', '$state', 'TrainingService', '$rootScope',
+  function($scope, $state, TrainingService, $rootScope){
     init();
 
     function init(){
       console.log('Dashboard is initializing...');
+      console.log($rootScope.menuClick);
       $scope.data = {};
       $scope.data.sort = 'rating';
       $scope.data.courses = ['iOS', 'Android', 

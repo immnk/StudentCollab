@@ -21,3 +21,14 @@
 .nav-center{
   line-height: 50px;
 }
+@media only screen 
+  and (max-width: 768px){
+    .navbar-bg{
+      .hamburger{
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 5px 0;
+      }
+    }
+}
