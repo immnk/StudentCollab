@@ -1,4 +1,4 @@
-angular.module('codaglobal.services')
+angular.module('studentcollab')
 
 .factory('TrainingService', ['$q', '$http', '$httpParamSerializer',
  function($q, $http, $httpParamSerializer){

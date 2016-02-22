@@ -1,6 +1,6 @@
-angular.module('codaglobal.controllers')
-.controller('MenuCtrl', ['$scope', '$state', '$rootScope',
-  function($scope, $state, rootScope){
+// angular.module('studentcollab.controllers')
+app.components.controller('MenuCtrl', ['$scope', '$rootScope',
+  function($scope, rootScope){
     init();
 
     function init(){

@@ -1,4 +1,4 @@
-angular.module('codaglobal.controllers')
+app.components
 .controller('DashboardCtrl', ['$scope', '$state', 'TrainingService', '$rootScope',
   function($scope, $state, TrainingService, $rootScope){
     init();
