@@ -6,7 +6,8 @@
     color: #333333;
     font-weight: lighter; }
     .navbar-bg .navbar-brand img {
-      display: inline; }
+      display: inline;
+      height: 50px; }
     .navbar-bg .navbar-brand .tag-line {
       text-transform: capitalize; }
 
