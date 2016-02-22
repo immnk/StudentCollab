@@ -16,7 +16,7 @@ app.config([
         $filterProvider, $provide) {
         $stateProvider
 
-            .state('menu', {
+        .state('menu', {
             url: '/menu',
             abstract: true,
             templateUrl: 'templates/menu.html',
@@ -60,6 +60,37 @@ app.config([
 
                     });
 
+                    return deferred.promise;
+                }]
+            }
+        })
+
+        .state('menu.course', {
+            url: '/:courseId',
+            templateUrl: 'templates/course.html',
+            controller: 'CourseCtrl',
+            resolve: {
+                // course: ['$stateParams', 'TrainingService',
+                //     function($stateParams, TrainingService) {
+                //         var courseId = $stateParams.courseId;
+                //         console.log(courseId);
+                //         TrainingService.getCourseById(courseId).then(function(response) {
+                //             console.log(response);
+                //             if (response.isSuccess) {
+                //                 return response.course;
+                //             }
+                //         });
+                //     }
+                // ],
+                load: ['$q', '$rootScope', function($q, $rootScope) {
+                    var deferred = $q.defer();
+                    require([
+                        'js/controllers/course-controller'
+                    ], function() {
+                        $rootScope.$apply(function() {
+                            deferred.resolve();
+                        });
+                    });
                     return deferred.promise;
                 }]
             }
