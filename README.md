@@ -12,8 +12,6 @@ Student collab is a collaborator software using
 
 ### Installation
 
-You need Gulp installed globally:
-
 ```sh
 $ bower install
 $ browser-sync start --server
