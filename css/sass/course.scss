@@ -1,0 +1,26 @@
+.course {
+    .course-wrapper {
+        padding: 15px;
+    }
+    .students-wrapper {
+        max-height: calc(100vh - 50px);
+        overflow: scroll;
+        .student {
+            padding: 10px 15px;
+            margin: 5px 0;
+            background: white;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            .name{
+
+            }
+            .student-class{
+
+            }
+            .grade{
+            	text-align: center;
+            }
+        }
+    }
+}
